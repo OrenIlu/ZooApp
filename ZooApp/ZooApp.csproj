@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{11583902-246C-49FD-984D-3D67859BD5E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ZooApp</RootNamespace>
+    <AssemblyName>ZooApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animal.cs" />
+    <Compile Include="Bird.cs" />
+    <Compile Include="Clownfish.cs" />
+    <Compile Include="ClownFishForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClownFishForm.Designer.cs">
+      <DependentUpon>ClownFishForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dolphin.cs" />
+    <Compile Include="DolphinsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DolphinsForm.Designer.cs">
+      <DependentUpon>DolphinsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eagle.cs" />
+    <Compile Include="EaglesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EaglesForm.Designer.cs">
+      <DependentUpon>EaglesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fish.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lion.cs" />
+    <Compile Include="LionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LionsForm.Designer.cs">
+      <DependentUpon>LionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mammal.cs" />
+    <Compile Include="Parrot.cs" />
+    <Compile Include="ParrotsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParrotsForm.Designer.cs">
+      <DependentUpon>ParrotsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tiger.cs" />
+    <Compile Include="TigersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TigersForm.Designer.cs">
+      <DependentUpon>TigersForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClownFishForm.resx">
+      <DependentUpon>ClownFishForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DolphinsForm.resx">
+      <DependentUpon>DolphinsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EaglesForm.resx">
+      <DependentUpon>EaglesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LionsForm.resx">
+      <DependentUpon>LionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParrotsForm.resx">
+      <DependentUpon>ParrotsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TigersForm.resx">
+      <DependentUpon>TigersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClownFish_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dolphin_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tiger_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eagle_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lion_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parrot_bkg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grey_Dolphin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Palearctic_Tiger.png" />
+    <None Include="Resources\Oriental_Tiger.png" />
+    <None Include="Resources\Neotropical_Tiger.png" />
+    <None Include="Resources\Neartic_Tiger.png" />
+    <None Include="Resources\African_Tiger.png" />
+    <None Include="Resources\Palearctic_Lion.png" />
+    <None Include="Resources\Oriental_Lion.png" />
+    <None Include="Resources\Neotropical_Lion.png" />
+    <None Include="Resources\Nearctic_Lion.png" />
+    <None Include="Resources\African_Lion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pink_Dolphin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White_Dolphin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black_Dolphin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common_Clownfish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ephippium_Clownfish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Latezonatus_Clownfish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sandaracinos_Clownfish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bald Head_Eagle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black Hawk_Eagle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Philippine_Eagle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\American_Eagle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_Parrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red_Parrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Black_Parrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_Parrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound_Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lion_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClownFish_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parrot_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tiger_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dolphin_Sound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eagle_Sound.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
